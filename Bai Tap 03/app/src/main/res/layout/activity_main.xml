@@ -8,7 +8,7 @@
     tools:context=".MainActivity">
 
     <RelativeLayout
-        android:id = "@+id/TOP"
+        android:id="@+id/TOP"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/background_gradient"
@@ -36,8 +36,8 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/imageView"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop = "15sp"
-                android:text="LOGIN"
+                android:layout_marginTop="15sp"
+                android:text="SIGN IN"
                 android:textColor="#FFF"
                 android:textSize="20sp" />
         </RelativeLayout>
@@ -122,10 +122,8 @@
                 android:background="@drawable/rec_gradient_fb"
                 android:text="Đăng Nhập với FACEBOOK"
                 android:textAllCaps="false"
-                android:textColor="#FFF" />`
-        </LinearLayout>
-    </RelativeLayout>
-
-
-
-</RelativeLayout>
+                android:textColor="#FFF"
+            />
+        </LinearLayout >
+    </RelativeLayout >
+</RelativeLayout >
