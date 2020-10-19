@@ -21,9 +21,9 @@ public class MainActivity extends AppCompatActivity {
 
     ListView listView;
 
-    String mTitle[] = {"Facebook", "WhatsApp", "Twitter", "Instagram", "Youtube"};
-    String mDescription[] = {"Facebook Description", "WhatsApp Description", "Twitter Description", "Instagram Description", "Youtube Description"};
-    int images[] = {R.drawable.facebook, R.drawable.whatsapp, R.drawable.twitter, R.drawable.instagram, R.drawable.youtube};
+    String mTitle[] = {"Facebook", "Instagram", "Twitter", "Youtube"};
+    String mDescription[] = {"$33", "$49", "$25", "$21"};
+    int images[] = {R.drawable.facebook, R.drawable.instagram, R.drawable.twitter, R.drawable.youtube};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
