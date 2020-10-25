@@ -1,0 +1,87 @@
+<?xml version = "1.0" encoding = "utf-8" ?>
+<LinearLayout
+    android:layout_height = "match_parent"
+    android:layout_width = "match_parent"
+    android:orientation = "vertical"
+    xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Button_Edit"
+    >
+
+    <LinearLayout
+        android:layout_height = "wrap_content"
+        android:layout_marginBottom = "20dp"
+        android:layout_marginLeft = "10dp"
+        android:layout_marginTop = "10dp"
+        android:layout_width = "match_parent"
+        android:orientation = "vertical"
+        >
+
+        <TextView
+            android:id = "@+id/PRODUCT_NAME"
+            android:layout_height = "wrap_content"
+            android:layout_width = "wrap_content"
+            android:text = "PRODUCT NAME"
+            android:textSize = "20sp"
+        />
+
+        <EditText
+            android:ems = "10"
+            android:id = "@+id/txtProductName"
+            android:inputType = "text"
+            android:layout_height = "wrap_content"
+            android:layout_width = "match_parent"
+            android:textSize="20sp"
+            >
+            <requestFocus />
+        </EditText >
+    </LinearLayout >
+
+    <LinearLayout
+        android:layout_height = "wrap_content"
+        android:layout_marginBottom = "20dp"
+        android:layout_marginLeft = "10dp"
+        android:layout_marginTop = "10dp"
+        android:layout_width = "match_parent"
+        android:orientation = "vertical"
+        >
+
+        <TextView
+            android:layout_height = "wrap_content"
+            android:layout_width = "wrap_content"
+            android:text = "PRICE"
+            android:textSize = "20sp"
+        />
+
+        <EditText
+            android:id="@+id/txtPrice"
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:inputType = "text"
+            android:textSize = "20sp"
+        />
+    </LinearLayout >
+
+    <LinearLayout
+        android:gravity = "center"
+        android:layout_height = "wrap_content"
+        android:layout_width = "match_parent"
+        >
+
+        <Button
+            android:id = "@+id/btnOK"
+            android:layout_height = "wrap_content"
+            android:layout_width = "wrap_content"
+            android:text = "OK"
+            android:textSize = "20sp"
+        />
+
+        <Button
+            android:id = "@+id/btnCancel"
+            android:layout_height ="wrap_content"
+            android:layout_width = "wrap_content"
+            android:text="CANCEL"
+            android:textSize="20sp"
+        />
+    </LinearLayout >
+</LinearLayout >
