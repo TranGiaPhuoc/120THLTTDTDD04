@@ -25,9 +25,9 @@ public class MainActivity extends AppCompatActivity
     {
         super.onCreate( savedInstanceState ) ;
         setContentView( R.layout.activity_main ) ;
-        initListener() ;
-        initView() ;
         MY_DATABASE = new My_Database( this ) ;
+        initView() ;
+        initListener() ;
     }
 
     private void initListener()
