@@ -5,17 +5,17 @@ import android.content.Context ;
 import android.database.sqlite.SQLiteDatabase ;
 import android.database.sqlite.SQLiteOpenHelper ;
 
-public class My_Database extends SQLiteOpenHelper
+public class Database extends SQLiteOpenHelper
 {
     private static final String DATABASE_NAME = "Database.DB" ;
-    private static final String TABLE_NAME = "Sinh_Vien" ;
     private static final String LINE_01 = "ID" ;
     private static final String LINE_02 = "NAME" ;
     private static final String LINE_03 = "CHEMISTRY" ;
     private static final String LINE_04 = "PHYSICS" ;
     private static final String LINE_05 = "MATH" ;
+    private static final String TABLE_NAME = "Sinh_Vien" ;
 
-    public My_Database( Context CONTEXT )
+    public Database( Context CONTEXT )
     {
         super ( CONTEXT , DATABASE_NAME , null , 1 ) ;
     }
@@ -28,7 +28,7 @@ public class My_Database extends SQLiteOpenHelper
     }
 
     @Override
-    public void onUpgrade( SQLiteDatabase SQ_LITE_DATABASE , int I_01 , int I_02 )
+    public void onUpgrade( SQLiteDatabase SQ_LITE_DATABASE , int INT_01 , int INT_02 )
     {
         SQ_LITE_DATABASE.execSQL( "DROP TABLE IF EXISTS " + TABLE_NAME  ) ;
         onCreate( SQ_LITE_DATABASE ) ;
@@ -41,9 +41,7 @@ public class My_Database extends SQLiteOpenHelper
         if ( RESULTS == -1 )
             return false ;
         else
-        {
             return true ;
-        }
     }
 
     public boolean INSERT( String NAME , String CHEMISTRY , String PHYSICS , String MATH )
@@ -58,9 +56,7 @@ public class My_Database extends SQLiteOpenHelper
         if ( RESULTS == -1 )
             return false ;
         else
-        {
             return true ;
-        }
     }
 
     public boolean UPDATE( String ID , String NAME , String CHEMISTRY , String PHYSICS , String MATH )
@@ -76,8 +72,6 @@ public class My_Database extends SQLiteOpenHelper
         if ( RESULTS == -1 )
             return false ;
         else
-        {
             return true ;
-        }
     }
 }
