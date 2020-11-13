@@ -1,0 +1,126 @@
+<?xml version = "1.0" encoding = "utf-8" ?>
+<LinearLayout
+    android:layout_height = "match_parent"
+    android:layout_width = "match_parent"
+    android:orientation = "vertical"
+    xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:app = "http://schemas.android.com/apk/res-auto"
+    xmlns:tools = "http://schemas.android.com/tools"
+    tools:context = ".Class_Management"
+    >
+
+    <LinearLayout
+        android:gravity = "center"
+        android:layout_height = "wrap_content"
+        android:layout_marginTop = "20dp"
+        android:layout_width = "match_parent"
+        android:orientation = "horizontal"
+        >
+
+        <TextView
+            android:layout_height = "wrap_content"
+            android:layout_width = "wrap_content"
+            android:text = "FORM QUẢN LÝ LỚP"
+            android:textColor = "#FF0000"
+            android:textSize = "25dp"
+            android:textStyle = "bold"
+            />
+    </LinearLayout >
+
+    <LinearLayout
+        android:gravity = "center"
+        android:layout_height = "wrap_content"
+        android:layout_width = "match_parent"
+        android:orientation = "vertical"
+        >
+
+        <EditText
+            android:hint = "Id"
+            android:id = "@+id/ET_Id"
+            android:layout_height = "wrap_content"
+            android:layout_marginTop = "15dp"
+            android:layout_weight = "1"
+            android:layout_width = "325dp"
+            android:selectAllOnFocus = "false"
+            android:textColorHint = "#000"
+            />
+
+        <EditText
+            android:hint = "NAME"
+            android:id = "@+id/ET_NAME"
+            android:inputType = "text"
+            android:layout_height = "wrap_content"
+            android:layout_marginTop = "15dp"
+            android:layout_weight = "1"
+            android:layout_width = "325dp"
+            android:selectAllOnFocus = "false"
+            android:textColorHint = "#000"
+            />
+
+        <TextView
+            android:id = "@+id/TV_COUNT_01"
+            android:layout_height = "wrap_content"
+            android:layout_width = "wrap_content"
+            android:text = "COUNT : "
+            android:textStyle = "bold"
+            />
+    </LinearLayout >
+
+    <LinearLayout
+        android:gravity = "center"
+        android:layout_height = "wrap_content"
+        android:layout_marginTop = "15dp"
+        android:layout_width = "match_parent"
+        android:orientation = "horizontal"
+        android:weightSum = "4"
+        >
+
+        <Button
+            android:id = "@+id/B_ADD_01"
+            android:layout_height = "wrap_content"
+            android:layout_weight = "1"
+            android:layout_width = "55dp"
+            android:text = "ADD"
+            android:textAllCaps = "false"
+            android:textColor = "#0000FF"
+            android:textSize = "17dp"
+            />
+
+        <Button
+            android:id = "@+id/B_DELETE_01"
+            android:layout_height = "wrap_content"
+            android:layout_marginLeft = "20dp"
+            android:layout_weight = "1"
+            android:layout_width = "55dp"
+            android:text = "DELETE"
+            android:textAllCaps = "false"
+            android:textColor = "#0000FF"
+            android:textSize = "17dp"
+            />
+
+        <Button
+            android:id = "@+id/B_EDIT_01"
+            android:layout_height = "wrap_content"
+            android:layout_marginLeft = "20dp"
+            android:layout_weight = "1"
+            android:layout_width = "55dp"
+            android:text = "EDIT"
+            android:textAllCaps = "false"
+            android:textColor = "#0000FF"
+            android:textSize = "17dp"
+            />
+    </LinearLayout >
+
+    <LinearLayout
+        android:layout_gravity = "center"
+        android:layout_height = "wrap_content"
+        android:layout_width = "wrap_content"
+        >
+
+        <ListView
+            android:id = "@+id/LV_01"
+            android:layout_height = "match_parent"
+            android:layout_width = "325dp"
+            />
+    </LinearLayout >
+</LinearLayout >

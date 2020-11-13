@@ -1,0 +1,63 @@
+<?xml version = "1.0" encoding = "utf-8" ?>
+<LinearLayout
+    android:background = "@drawable/background"
+    android:layout_height = "match_parent"
+    android:layout_width = "match_parent"
+    xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:app = "http://schemas.android.com/apk/res-auto"
+    xmlns:tools = "http://schemas.android.com/tools"
+    tools:context = ".Main_Activity"
+    >
+    
+    <LinearLayout
+        android:gravity = "center"
+        android:layout_height = "wrap_content"
+        android:layout_marginTop = "30dp"
+        android:layout_width = "match_parent"
+        android:orientation = "vertical"
+        >
+
+        <TextView
+            android:layout_height = "wrap_content"
+            android:layout_width = "wrap_content"
+            android:text = "LỚP HỌC PHẦN"
+            android:textColor = "#FF0000"
+            android:textSize = "35dp"
+            android:textStyle = "bold"
+        />
+
+        <Button
+            android:background = "@drawable/botron_01"
+            android:id = "@+id/B_CLASS_MANAGER"
+            android:layout_height = "wrap_content"
+            android:layout_marginTop = "20dp"
+            android:layout_width = "300dp"
+            android:text = "QUẢN LÝ LỚP"
+            android:textAllCaps = "false"
+            android:textColor = "#fff"
+            android:textSize = "25dp"
+        />
+
+        <Button
+            android:background = "@drawable/botron_02"
+            android:id = "@+id/B_STUDENT_MANAGER"
+            android:layout_height = "wrap_content"
+            android:layout_marginTop = "20dp"
+            android:layout_width = "300dp"
+            android:text = "QUẢN LÝ SINH VIÊN"
+            android:textAllCaps = "false"
+            android:textColor = "#fff"
+            android:textSize = "25dp"
+        />
+
+        <Button
+            android:id = "@+id/B_SIGN_OUT"
+            android:layout_height = "wrap_content"
+            android:layout_marginTop = "20dp"
+            android:layout_width = "wrap_content"
+            android:text = "ĐĂNG XUẤT"
+            android:textAllCaps = "false"
+            android:textStyle = "bold"
+        />
+    </LinearLayout >
+</LinearLayout >

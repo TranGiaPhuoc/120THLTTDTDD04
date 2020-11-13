@@ -1,0 +1,170 @@
+<?xml version = "1.0" encoding = "utf-8" ?>
+<LinearLayout
+    android:layout_height = "match_parent"
+    android:layout_width = "match_parent"
+    android:orientation = "vertical"
+    xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:app = "http://schemas.android.com/apk/res-auto"
+    xmlns:tools = "http://schemas.android.com/tools"
+    tools:context = ".Student_Management"
+    >
+
+    <LinearLayout
+        android:gravity = "center"
+        android:layout_height = "wrap_content"
+        android:layout_marginTop = "10dp"
+        android:layout_width = "match_parent"
+        android:orientation = "horizontal"
+        >
+
+        <TextView
+            android:layout_height = "wrap_content"
+            android:layout_width = "wrap_content"
+            android:text = "FORM QUẢN LÝ SINH VIÊN"
+            android:textColor = "#FF0000"
+            android:textSize = "25dp"
+            android:textStyle = "bold"
+        />
+    </LinearLayout >
+
+    <LinearLayout
+        android:gravity = "center"
+        android:layout_height = "wrap_content"
+        android:layout_width = "match_parent"
+        android:orientation = "vertical"
+        >
+
+        <EditText
+            android:hint = "STUDENT'S CODE"
+            android:id = "@+id/ET_STUDENTS_CODE"
+            android:layout_height = "wrap_content"
+            android:layout_marginTop = "15dp"
+            android:layout_weight = "1"
+            android:layout_width = "325dp"
+            android:selectAllOnFocus = "false"
+            android:textColorHint = "#000"
+        />
+
+        <EditText
+            android:hint = "STUDENT'S NAME"
+            android:id = "@+id/ET_STUDENTS_NAME"
+            android:inputType = "textAutoComplete"
+            android:layout_height = "wrap_content"
+
+            android:layout_weight = "1"
+            android:layout_width = "325dp"
+            android:selectAllOnFocus = "false"
+            android:textColorHint = "#000"
+        />
+
+        <EditText
+            android:hint = "AGE"
+            android:id = "@+id/ET_AGE"
+            android:inputType = "number"
+            android:layout_height = "wrap_content"
+            android:layout_weight = "1"
+            android:layout_width = "325dp"
+            android:selectAllOnFocus = "false"
+            android:textColorHint = "#000"
+        />
+
+        <EditText
+            android:hint = "ADDRESS"
+            android:id = "@+id/ET_ADDRESS"
+            android:layout_height = "wrap_content"
+            android:layout_weight = "1"
+            android:layout_width = "325dp"
+            android:selectAllOnFocus = "false"
+            android:textColorHint = "#000"
+        />
+
+        <EditText
+            android:hint = "EMAIL"
+            android:id = "@+id/ET_EMAIL"
+            android:inputType = "textEmailAddress"
+            android:layout_height = "wrap_content"
+            android:layout_weight = "1"
+            android:layout_width = "325dp"
+            android:selectAllOnFocus = "false"
+            android:textColorHint = "#000"
+        />
+
+        <EditText
+            android:hint = "PHONE"
+            android:id = "@+id/ET_PHONE"
+            android:inputType = "phone"
+            android:layout_height = "wrap_content"
+            android:layout_weight = "1"
+            android:layout_width = "325dp"
+            android:selectAllOnFocus = "false"
+            android:textColorHint = "#000"
+        />
+
+        <TextView
+            android:id = "@+id/TV_COUNT_02"
+            android:layout_height = "wrap_content"
+            android:layout_marginTop = "15dp"
+            android:layout_width = "wrap_content"
+            android:text = "COUNT : "
+            android:textStyle = "bold"
+        />
+    </LinearLayout >
+
+    <LinearLayout
+        android:gravity = "center"
+        android:layout_height = "wrap_content"
+        android:layout_marginTop = "15dp"
+        android:layout_width = "match_parent"
+        android:orientation = "horizontal"
+        android:weightSum = "4"
+        >
+
+        <Button
+            android:id = "@+id/B_ADD_02"
+            android:layout_height = "wrap_content"
+            android:layout_weight = "1"
+            android:layout_width = "55dp"
+            android:text = "ADD"
+            android:textAllCaps = "false"
+            android:textColor = "#0000FF"
+            android:textSize = "17dp"
+            />
+
+        <Button
+            android:id = "@+id/B_DELETE_02"
+            android:layout_height = "wrap_content"
+            android:layout_marginLeft = "20dp"
+            android:layout_weight = "1"
+            android:layout_width = "55dp"
+            android:text = "DELETE"
+            android:textAllCaps = "false"
+            android:textColor = "#0000FF"
+            android:textSize = "17dp"
+            />
+
+        <Button
+            android:id = "@+id/B_EDIT_02"
+            android:layout_height = "wrap_content"
+            android:layout_marginLeft = "20dp"
+            android:layout_weight = "1"
+            android:layout_width = "55dp"
+            android:text = "EDIT"
+            android:textAllCaps = "false"
+            android:textColor = "#0000FF"
+            android:textSize = "17dp"
+            />
+    </LinearLayout >
+
+    <LinearLayout
+        android:layout_gravity = "center"
+        android:layout_height = "wrap_content"
+        android:layout_width = "wrap_content"
+        >
+
+        <ListView
+            android:id = "@+id/LV_02"
+            android:layout_height = "match_parent"
+            android:layout_width = "match_parent"
+            />
+    </LinearLayout >
+</LinearLayout >

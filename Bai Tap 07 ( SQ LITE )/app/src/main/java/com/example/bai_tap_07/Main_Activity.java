@@ -13,7 +13,7 @@ public class Main_Activity extends AppCompatActivity
     private Button B_DELETE ;
     private Button B_EDIT ;
     private Database DATABASE ;
-    private EditText ET_ID ;
+    private EditText ET_Id ;
     private EditText ET_NAME ;
     private EditText ET_CHEMISTRY ;
     private EditText ET_MATH ;
@@ -53,7 +53,7 @@ public class Main_Activity extends AppCompatActivity
             @Override
             public void onClick( View VIEW )
             {
-                String ID = ET_ID.getText().toString() ;
+                String ID = ET_Id.getText().toString() ;
                 boolean BOOLEAN = DATABASE.DELETE( ID ) ;
                 if ( BOOLEAN )
                     Toast.makeText( Main_Activity.this , "DELETED" , Toast.LENGTH_LONG ).show() ;
@@ -68,7 +68,7 @@ public class Main_Activity extends AppCompatActivity
             public void onClick( View VIEW )
             {
                 String CHEMISTRY = ET_CHEMISTRY.getText().toString() ;
-                String ID = ET_ID.getText().toString() ;
+                String ID = ET_Id.getText().toString() ;
                 String MATH = ET_MATH.getText().toString() ;
                 String NAME = ET_NAME.getText().toString() ;
                 String PHYSICS = ET_PHYSICS.getText().toString() ;
@@ -87,7 +87,7 @@ public class Main_Activity extends AppCompatActivity
         B_DELETE = ( Button ) findViewById( R.id.B_DELETE ) ;
         B_EDIT = ( Button ) findViewById( R.id.B_EDIT ) ;
         ET_CHEMISTRY = ( EditText ) findViewById( R.id.ET_CHEMISTRY ) ;
-        ET_ID = ( EditText ) findViewById( R.id.ET_ID ) ;
+        ET_Id = ( EditText ) findViewById( R.id.ET_Id ) ;
         ET_MATH = ( EditText ) findViewById( R.id.ET_MATH ) ;
         ET_NAME = ( EditText ) findViewById( R.id.ET_NAME ) ;
         ET_PHYSICS = ( EditText ) findViewById( R.id.ET_PHYSICS ) ;

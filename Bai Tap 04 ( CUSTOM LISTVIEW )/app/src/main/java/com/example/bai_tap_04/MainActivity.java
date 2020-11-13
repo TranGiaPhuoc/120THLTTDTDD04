@@ -12,6 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -19,23 +20,23 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    ListView listView;
+    GridView GView;
 
-    String mTitle[] = {"Facebook", "Instagram", "Twitter", "WhatsApp" , "Youtube"};
-    String mDescription[] = {"$33", "$49", "$25", "$40","$21"};
-    int images[] = {R.drawable.facebook, R.drawable.instagram, R.drawable.twitter, R.drawable.youtube , R.drawable.youtube};
+    String mTitle[] = {"TRAN GIA PHUOC", "Loa JBL PartyBox 310", "LOA KARAOKE DI ĐỘNG KINGBASS F-1507", "Loa karaoke HAS KF312" , "Loa Karaoke Bluetooth SD-306"};
+    String mDescription[] = {"1811505310333", "14.900.000đ", "5.190.000đ", "9.450.000đ","950.000đ"};
+    int images[] = {R.drawable.avatar, R.drawable.a, R.drawable.b, R.drawable.c , R.drawable.d};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        listView = findViewById(R.id.listView);
+        GView = findViewById(R.id.GView);
 
         MyAdapter adapter = new MyAdapter(this, mTitle, mDescription, images);
-        listView.setAdapter(adapter);
+        GView.setAdapter(adapter);
 
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        GView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
@@ -108,6 +109,8 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+
+
     }
 
     class MyAdapter extends ArrayAdapter<String> {

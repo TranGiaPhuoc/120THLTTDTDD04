@@ -8,7 +8,7 @@ import android.database.sqlite.SQLiteOpenHelper ;
 public class Database extends SQLiteOpenHelper
 {
     private static final String DATABASE_NAME = "Database.DB" ;
-    private static final String LINE_01 = "ID" ;
+    private static final String LINE_01 = "Id" ;
     private static final String LINE_02 = "NAME" ;
     private static final String LINE_03 = "CHEMISTRY" ;
     private static final String LINE_04 = "PHYSICS" ;
@@ -34,10 +34,10 @@ public class Database extends SQLiteOpenHelper
         onCreate( SQ_LITE_DATABASE ) ;
     }
 
-    public boolean DELETE( String ID )
+    public boolean DELETE( String Id )
     {
         SQLiteDatabase DATABASE = this.getWritableDatabase() ;
-        long RESULTS = DATABASE.delete( TABLE_NAME , LINE_01 + " = ?" , new String[] { ID }) ;
+        long RESULTS = DATABASE.delete( TABLE_NAME , LINE_01 + " = ?" , new String[] { Id }) ;
         if ( RESULTS == -1 )
             return false ;
         else
@@ -59,16 +59,16 @@ public class Database extends SQLiteOpenHelper
             return true ;
     }
 
-    public boolean UPDATE( String ID , String NAME , String CHEMISTRY , String PHYSICS , String MATH )
+    public boolean UPDATE( String Id , String NAME , String CHEMISTRY , String PHYSICS , String MATH )
     {
         SQLiteDatabase DATABASE = this.getWritableDatabase() ;
         ContentValues VALUES = new ContentValues() ;
-        VALUES.put( LINE_01 , ID ) ;
+        VALUES.put( LINE_01 , Id ) ;
         VALUES.put( LINE_02 , NAME ) ;
         VALUES.put( LINE_03 , CHEMISTRY ) ;
         VALUES.put( LINE_04 , PHYSICS ) ;
         VALUES.put( LINE_05 , MATH ) ;
-        long RESULTS = DATABASE.update( TABLE_NAME , VALUES , LINE_01 + " = ?" , new String[] { ID }) ;
+        long RESULTS = DATABASE.update( TABLE_NAME , VALUES , LINE_01 + " = ?" , new String[] { Id }) ;
         if ( RESULTS == -1 )
             return false ;
         else

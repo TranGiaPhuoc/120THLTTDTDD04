@@ -15,8 +15,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Button btnOpen=(Button)
                 findViewById(R.id.btnOpenChildActivity);
-        btnOpen.setOnClickListener(new
-                                           View.OnClickListener() {
+        btnOpen.setOnClickListener(new View.OnClickListener() {
                                                public void onClick(View arg0) {
                                                    doOpenChildActivity();
                                                }
