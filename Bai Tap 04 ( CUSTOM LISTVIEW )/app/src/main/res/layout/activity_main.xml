@@ -64,23 +64,23 @@
 
         <Button
             android:id="@+id/message"
-            android:layout_width="wrap_content"
+            android:layout_width="90dp"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
-            android:layout_marginLeft="30dp"
+            android:layout_marginLeft="26dp"
             android:layout_toRightOf="@id/postbt"
             android:background="@drawable/option"
             android:text="LAZAMALL"
             android:textStyle="bold"></Button>
         <Button
             android:id="@+id/free"
-            android:layout_width="100dp"
+            android:layout_width="90dp"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:layout_marginLeft="140dp"
             android:layout_toRightOf="@id/postbt"
             android:background="@drawable/option"
-            android:text="FREE SHIPPING"
+            android:text="FREE SHOPPING"
             android:textStyle="bold"></Button>
     </RelativeLayout>
 
@@ -107,6 +107,4 @@
                 android:numColumns="auto_fit" />
         </LinearLayout>
     </RelativeLayout>
-
-
 </LinearLayout>

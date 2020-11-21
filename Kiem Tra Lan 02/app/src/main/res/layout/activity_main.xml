@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="@color/lightGrayColor"
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:id = "@+id/rellay1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id = "@+id/tv_address"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:fontFamily = "sans-serif"
+            android:text="PRODUCTS"
+            android:textAllCaps = "true"
+            android:textColor = "#000"
+            android:textSize = "50dp"
+            />
+        <ImageView
+            android:layout_width = "50dp"
+            android:layout_height = "50dp"
+            android:layout_alignParentRight = "true"
+            android:layout_marginRight = "15dp"
+            android:layout_marginTop = "11dp"
+            android:adjustViewBounds = "true"
+            android:scaleType = "centerInside"
+            android:src = "@drawable/ic_filter"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/abc"
+        android:layout_below="@+id/rellay1"
+        android:layout_height="550dp"
+        android:layout_width="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical"
+            >
+
+            <GridView
+                android:id="@+id/GV"
+                android:numColumns="auto_fit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@color/lightGrayColor"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below = "@+id/abc"
+        >
+
+        <TextView
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:fontFamily = "sans-serif"
+            android:layout_centerHorizontal = "true"
+            android:text="Load More >"
+            android:textAllCaps = "true"
+            android:textColor = "#ff66"
+            android:textSize = "20dp"
+            />
+    </RelativeLayout>
+</LinearLayout>

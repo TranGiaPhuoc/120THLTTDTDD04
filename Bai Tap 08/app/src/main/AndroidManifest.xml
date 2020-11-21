@@ -21,7 +21,7 @@
             </intent-filter>
         </activity >
         <activity
-            android:name = "Student_Management"
+            android:name = ".Student_Management"
             >
         </activity >
     </application>
